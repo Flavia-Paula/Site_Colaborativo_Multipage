@@ -6,6 +6,7 @@ window.addEventListener('DOMContentLoaded', () => {
       if (link.getAttribute('href') === currentPage) {
         link.style.textDecoration = 'underline';
       }
+      
     });
   });
   
