@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+
   body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background: url("pexels-jeshoots-234527.jpg") no-repeat center center fixed;
@@ -24,16 +24,16 @@
     color: #fff;
   }
 
-  
-  
+
+
   /* Header */
   header {
-    background-color: rgba(0, 0, 0, 0.356); 
+    background-color: rgba(0, 0, 0, 0.356);
     color: white;
     padding: 20px 0;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   }
-  
+
   .navbar {
     max-width: 1200px;
     margin: 0 auto;
@@ -56,11 +56,11 @@
     font-weight: bold;
     font-size: 1rem;
   }
-  
+
   nav a:hover {
     text-decoration: underline;
   }
-  
+
   /* Main */
   main {
     padding: 40px 20px;
@@ -69,7 +69,7 @@
     background-color: transparent;
     color: #fff;
   }
-  
+
   /* Seções */
   section {
     padding: 60px 40px;
@@ -77,38 +77,38 @@
     margin: auto;
     line-height: 1.6;
   }
-  
+
   h2 {
     font-size: 2em;
     margin-bottom: 20px;
     color: #fff;
   }
-  
+
   p {
     margin-bottom: 20px;
     color: #fff;
     font-size: 1.1em;
   }
-  
+
   ul {
     margin-top: 20px;
     padding-left: 20px;
   }
-  
+
   li {
     margin-bottom: 10px;
     font-size: 1.05em;
   }
-  
+
   article {
     border-bottom: 1px solid #ddd;
     padding: 10px 0;
   }
-  
+
   article:last-child {
     border-bottom: none;
   }
-  
+
   /* Footer */
   footer {
     background-color: rgba(0, 0, 0, 0.356);
@@ -117,25 +117,142 @@
     padding: 15px 0;
     margin-top: 40px;
   }
-  
+
   /* Mapa */
   #mapa iframe {
     border-radius: 6px;
     margin-top: 10px;
   }
-  
+
   @media (max-width: 600px) {
     .navbar {
       flex-direction: column;
       align-items: flex-start;
     }
-  
+
     nav {
       margin-top: 10px;
     }
-  
+
     nav a {
       margin-left: 0;
       margin-right: 15px;
     }
+  }
+
+    .carrossel-container {
+    padding: 32px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .carrossel {
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slides {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .slide {
+    min-width: 100%;
+  }
+
+  .botoes {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  button {
+    font-size: 2.5rem;
+    background: none;
+    border: none;
+    color: white
+  }
+
+  button:hover{
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.5);
+  }
+
+  form{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  form input {
+    padding: 8px;
+    border-radius: 8px;
+    outline: none;
+    border: #a3a3a3 solid 1px;
+    font-size: 1.2rem;
+  }
+
+  form textarea {
+    border-radius: 8px;
+    outline: none;
+    border: #a3a3a3 solid 1px;
+    font-size: 1.2rem;
+  }
+
+  .observacao {
+    text-align: center;
+    margin-top: 32px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #a1a1a1;
+  }
+
+  .observacao a{
+    color: #4b0082;
+    text-decoration: none;
+  }
+
+  .input-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .nome-email-container {
+    display: flex;
+    gap: 64px;
+  }
+
+  .nome-input {
+    width: 40%;
+  }
+
+  .email-input {
+    width: 50%;
+  }
+
+  .submit-button {
+    width: 120px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border: none;
+  }
+
+  .submit-button:hover {
+    cursor: pointer;
+    background-color: #d1d1d1;
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
   }
