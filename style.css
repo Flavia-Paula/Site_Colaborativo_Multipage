@@ -7,29 +7,41 @@
   
   body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #e6e6e6; 
     color: #333;
     line-height: 1.6;
+    min-height: 100vh; 
   }
   
   /* Header */
   header {
-    background-color: #4b0082;
+    background-color: rgba(0, 0, 0, 0.801); 
     color: white;
     padding: 20px 0;
-    text-align: center;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   }
   
-  header h1 {
-    margin-bottom: 10px;
+  .navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
-  
+
+  .logo {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+
   nav a {
     color: #fff;
     text-decoration: none;
-    margin: 0 10px;
+    margin-left: 20px;
     font-weight: bold;
+    font-size: 1rem;
   }
   
   nav a:hover {
@@ -38,12 +50,12 @@
   
   /* Main */
   main {
-    padding: 30px 20px;
-    max-width: 1000px;
-    margin: auto;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
   }
   
   /* Seções */
@@ -52,7 +64,7 @@
   }
   
   h2 {
-    color: #4b0082;
+    color: #222;
     margin-bottom: 10px;
   }
   
@@ -71,7 +83,7 @@
   
   /* Footer */
   footer {
-    background-color: #4b0082;
+    background-color: rgba(0, 0, 0, 0.801);
     color: white;
     text-align: center;
     padding: 15px 0;
@@ -84,3 +96,18 @@
     margin-top: 10px;
   }
   
+  @media (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav {
+      margin-top: 10px;
+    }
+  
+    nav a {
+      margin-left: 0;
+      margin-right: 15px;
+    }
+  }
