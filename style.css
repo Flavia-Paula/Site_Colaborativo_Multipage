@@ -201,6 +201,8 @@
     outline: none;
     border: #a3a3a3 solid 1px;
     font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.055); 
+    color: #fff; 
   }
 
   form textarea {
@@ -208,6 +210,8 @@
     outline: none;
     border: #a3a3a3 solid 1px;
     font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
   }
 
   .observacao {
