@@ -7,15 +7,28 @@
   
   body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #e6e6e6; 
-    color: #333;
-    line-height: 1.6;
-    min-height: 100vh; 
+    background: url("pexels-jeshoots-234527.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: auto;
+    margin: 0;
+    padding: 0;
   }
+
+  html {
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  section, p, li {
+    color: #fff;
+  }
+
+  
   
   /* Header */
   header {
-    background-color: rgba(0, 0, 0, 0.801); 
+    background-color: rgba(0, 0, 0, 0.356); 
     color: white;
     padding: 20px 0;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
@@ -53,23 +66,38 @@
     padding: 40px 20px;
     max-width: 1200px;
     margin: 30px auto;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+    background-color: transparent;
+    color: #fff;
   }
   
   /* Seções */
   section {
-    margin-bottom: 30px;
+    padding: 60px 40px;
+    max-width: 1000px;
+    margin: auto;
+    line-height: 1.6;
   }
   
   h2 {
-    color: #222;
-    margin-bottom: 10px;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fff;
   }
   
-  ul li {
-    margin: 8px 0;
+  p {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 1.1em;
+  }
+  
+  ul {
+    margin-top: 20px;
+    padding-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    font-size: 1.05em;
   }
   
   article {
@@ -83,7 +111,7 @@
   
   /* Footer */
   footer {
-    background-color: rgba(0, 0, 0, 0.801);
+    background-color: rgba(0, 0, 0, 0.356);
     color: white;
     text-align: center;
     padding: 15px 0;
